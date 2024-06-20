@@ -1,16 +1,31 @@
+/* @font-face 선언 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* 기본 스타일 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Pretendard-Regular';
+    background-color: #f8f7f4; /* 배경 색상 설정 */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #f8f7f4; /* 배경 색상 설정 */
+    color: #0c0c0c;
     padding: 10px 0;
     text-align: center;
+}
+
+header h1 {
+    font-size: 17em; /* h1 크기 조절 */
+    font-weight: 900;
+    margin: 0; /* 여백 제거 */
 }
 
 nav ul {
@@ -24,17 +39,18 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #0c0c0c; /* 네비게이션 링크 색상 수정 */
     text-decoration: none;
 }
 
 main {
     padding: 20px;
+    background-color: #f8f7f4; /* 배경 색상 설정 */
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #f8f7f4; /* 배경 색상 설정 */
+    color: #0c0c0c;
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -56,8 +72,8 @@ footer {
 }
 
 @media (max-width: 480px) {
-    header {
-        font-size: 14px;
+    header h1 {
+        font-size: 5em; /* 작은 화면에서 h1 크기 조절 */
     }
 
     main {
