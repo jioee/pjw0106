@@ -18,7 +18,7 @@ body {
 header {
     background-color: #f8f7f4; /* 배경 색상 설정 */
     color: #0c0c0c;
-    padding: 10px 0;
+    padding: 10px 0 0; /* 상단 padding을 0으로 조정 */
     text-align: center;
 }
 
@@ -63,8 +63,19 @@ nav ul li a {
 }
 
 main {
-    padding: 20px;
-    background-color: #f8f7f4; /* 배경 색상 설정 */
+        padding: 1px 80px; /* 위아래 10px, 좌우 80px로 설정 */
+        background-color: #f8f7f4; /* 배경 색상 설정 */
+}
+
+section h2 {
+    font-size: 5em; /* h2 폰트 크기 조절 */
+    margin-bottom: 10px;
+}
+
+.half-line {
+    width: 45%; /* 화면 중앙까지만 오는 선 */
+    margin: 0; /* 왼쪽정렬 */
+    border: 1.5px solid #0c0c0c; /* 검은색 선 */
 }
 
 footer {
@@ -97,5 +108,42 @@ footer {
 
     main {
         padding: 10px;
+    }
+}
+
+/* 화면 배율을 확대했을 때 글씨 크기 조절을 위한 미디어 쿼리 */
+@media (min-resolution: 1.8dppx) {
+    header h1 {
+        font-size: 9.5em; /* 배율이 2배 이상일 때 h1 크기 조절 */
+    }
+
+    nav ul li a {
+        font-size: 0.9em; /* 배율이 2배 이상일 때 네비게이션 링크 크기 조절 */
+    }
+
+    main p {
+        font-size: 1.2em; /* 배율이 2배 이상일 때 본문 글씨 크기 조절 */
+    }
+
+    footer p {
+        font-size: 0.8em; /* 배율이 2배 이상일 때 푸터 글씨 크기 조절 */
+    }
+}
+
+@media (min-resolution: 2.8dppx) {
+    header h1 {
+        font-size: 5.5em; /* 배율이 3배 이상일 때 h1 크기 조절 */
+    }
+
+    nav ul li a {
+        font-size: 0.8em; /* 배율이 3배 이상일 때 네비게이션 링크 크기 조절 */
+    }
+
+    main p {
+        font-size: 1.2em; /* 배율이 3배 이상일 때 본문 글씨 크기 조절 */
+    }
+
+    footer p {
+        font-size: 1.2em; /* 배율이 3배 이상일 때 푸터 글씨 크기 조절 */
     }
 }
