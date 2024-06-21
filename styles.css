@@ -23,7 +23,7 @@ header {
 }
 
 header h1 {
-    font-size: 13em; /* h1 크기 조절 */
+    font-size: 15em; /* h1 크기 조절 */
     font-weight: 900;
     margin: 0; /* 여백 제거 */
     display: flex;
@@ -31,10 +31,20 @@ header h1 {
     align-items: center;
 }
 
+.image-button-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
 .image-button {
     width: 1em;
     height: auto;
     cursor: pointer;
+    transition: all 0.3s ease; /* 변환 효과를 부드럽게 만듦 */
+}
+
+.image-button-wrapper:hover .image-button {
+    content: url('호떡22.png'); /* 커서를 올렸을 때 다른 이미지로 변경 */
 }
 
 nav ul {
@@ -82,7 +92,7 @@ footer {
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 3em; /* 작은 화면에서 h1 크기 조절 */
+        font-size: 3.5em; /* 작은 화면에서 h1 크기 조절 */
     }
 
     main {
