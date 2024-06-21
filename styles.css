@@ -1,19 +1,68 @@
-/* @font-face 선언 */
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
-}
-
-/* 기본 스타일 */
-body {
-    font-family: 'Pretendard-Regular';
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+  }
+  body{
+    font-family: 'Pretendard';
     background-color: #f8f7f4; /* 배경 색상 설정 */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
+
+
+
+
 
 header {
     background-color: #f8f7f4; /* 배경 색상 설정 */
@@ -47,6 +96,9 @@ header h1 {
     content: url('호떡22.png'); /* 커서를 올렸을 때 다른 이미지로 변경 */
 }
 
+
+
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -62,13 +114,18 @@ nav ul li a {
     text-decoration: none;
 }
 
+
+
+
+
 main {
         padding: 1px 80px; /* 위아래 10px, 좌우 80px로 설정 */
         background-color: #f8f7f4; /* 배경 색상 설정 */
 }
 
 section h2 {
-    font-size: 5em; /* h2 폰트 크기 조절 */
+    font-size: 6em; /* h2 폰트 크기 조절 */
+    font-weight: 500;
     margin-bottom: 10px;
 }
 
@@ -77,6 +134,45 @@ section h2 {
     margin: 0; /* 왼쪽정렬 */
     border: 1.5px solid #0c0c0c; /* 검은색 선 */
 }
+
+/* info-text 클래스 추가 */
+.info-text {
+    font-size: 3em; /* 원하는 폰트 크기로 조절 */
+}
+
+.info-a {
+    font-size: 6em; /* 폰트 크기 조절 */
+    font-weight: bold; /* 글자 굵기 조절 */
+}
+
+
+.info-b {
+    font-size: 3em; /* 폰트 크기 조절 */
+    font-weight: light; /* 글자 굵기 조절 */
+}
+
+
+.info-c {
+    font-size: 4.5em; /* 폰트 크기 조절 */
+    font-weight: 400; /* 글자 굵기 조절 */
+}
+
+
+.info-likes {
+    font-size: 1.4em; /* 폰트 크기 조절 */
+    font-weight: bold; /* 글자 굵기 조절 */
+}
+
+
+.info-dislikes {
+    font-size: 1.4em; /* 폰트 크기 조절 */
+    font-weight: normal; /* 글자 굵기 조절 */
+}
+
+
+
+
+
 
 footer {
     background-color: #f8f7f4; /* 배경 색상 설정 */
