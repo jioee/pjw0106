@@ -124,8 +124,8 @@ main {
 }
 
 section h2 {
-    font-size: 6em; /* h2 폰트 크기 조절 */
-    font-weight: 500;
+    font-size: 3em; /* h2 폰트 크기 조절 */
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
@@ -140,36 +140,44 @@ section h2 {
     font-size: 3em; /* 원하는 폰트 크기로 조절 */
 }
 
-.info-a {
+.info-1 {
     font-size: 6em; /* 폰트 크기 조절 */
     font-weight: bold; /* 글자 굵기 조절 */
 }
 
 
-.info-b {
+.info-2 {
     font-size: 3em; /* 폰트 크기 조절 */
-    font-weight: light; /* 글자 굵기 조절 */
+    font-weight: 500; /* 글자 굵기 조절 */
 }
 
 
-.info-c {
-    font-size: 4.5em; /* 폰트 크기 조절 */
-    font-weight: 400; /* 글자 굵기 조절 */
+.info-3 {
+    font-size: 6em; /* 폰트 크기 조절 */
+    font-weight: 100; /* 글자 굵기 조절 */
 }
 
 
-.info-likes {
-    font-size: 1.4em; /* 폰트 크기 조절 */
-    font-weight: bold; /* 글자 굵기 조절 */
+.info-4 {
+    font-size: 3em; /* 폰트 크기 조절 */
+    font-weight: 100; /* 글자 굵기 조절 */
 }
 
 
-.info-dislikes {
-    font-size: 1.4em; /* 폰트 크기 조절 */
-    font-weight: normal; /* 글자 굵기 조절 */
+.info-5 {
+    font-size: 1.7em; /* 폰트 크기 조절 */
+    font-weight: 100; /* 글자 굵기 조절 */
 }
 
+.info-6 {
+    font-size: 3em; /* 폰트 크기 조절 */
+    font-weight: 200; /* 글자 굵기 조절 */
+}
 
+.info-7 {
+    font-size: 2em; /* 폰트 크기 조절 */
+    font-weight: 600; /* 글자 굵기 조절 */
+}
 
 
 
