@@ -200,36 +200,26 @@ footer {
 
 
 
-
-.info img {
-    max-width: 400px;
-    float: left; /* 사진을 왼쪽으로 정렬 */
-    margin-right: 20px; /* 사진과 텍스트 사이의 간격 설정 */
-    margin-bottom: 100px; /* 이미지의 아래쪽 여백 */
-}
-
-.info {
-    overflow: hidden; /* 자식 요소들의 높이가 부모 요소의 높이를 결정하도록 함 */
-}
-
-.info p {
-    margin-left: 20px; /* 사진의 오른쪽 여백 설정 */
-}
-
-.info2 {
+.container {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+    align-items: center; /* 이미지와 설명글을 수직 중심으로 정렬 */
+    justify-content: center; /* 컨테이너의 내용물을 중앙으로 정렬 */
+    margin-bottom: 60px; /* 항목 간의 간격 */
+  }
+  .container img {
+    width: 220px;
+    height: 220px;
+    border-radius: 15px; /* 모서리를 둥글게 */
+    margin-right: 20px; /* 이미지와 설명 사이의 간격 */
+  }
 
-.info-image2 {
-    max-width: 400px;
-    margin-left: 10px; /* 이미지와 텍스트 사이의 간격 */
-}
+  .description {
+    max-width: 500px; /* 설명글의 최대 너비 */
+  }
 
-.info-2, .info-7 {
-    margin: 0; /* 여백 초기화 */
-}
+
+
+
 
 
 .separator {

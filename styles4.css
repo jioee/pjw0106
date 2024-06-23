@@ -128,7 +128,7 @@ main {
 section h2 {
     font-size: 3em; /* h2 폰트 크기 조절 */
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
 
 .half-line {
@@ -187,7 +187,6 @@ section h2 {
 }
 
 
-
 footer {
     background-color: #f8f7f4; /* 배경 색상 설정 */
     color: #0c0c0c;
@@ -199,37 +198,63 @@ footer {
 }
 
 
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto; /* 가운데 정렬 */
+  }
 
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto; /* 가운데 정렬 */
+  }
 
-.info img {
-    max-width: 400px;
-    float: left; /* 사진을 왼쪽으로 정렬 */
-    margin-right: 20px; /* 사진과 텍스트 사이의 간격 설정 */
-    margin-bottom: 100px; /* 이미지의 아래쪽 여백 */
-}
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 
-.info {
-    overflow: hidden; /* 자식 요소들의 높이가 부모 요소의 높이를 결정하도록 함 */
-}
+  .container:hover .overlay {
+    opacity: 1;
+  }
 
-.info p {
-    margin-left: 20px; /* 사진의 오른쪽 여백 설정 */
-}
+  .text {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
-.info2 {
+  .gallery {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+    justify-content: space-between; /* 사진들 사이에 공간을 추가 */
+    gap: 10px; /* 사진들 사이의 간격 */
+  }
 
-.info-image2 {
-    max-width: 400px;
-    margin-left: 10px; /* 이미지와 텍스트 사이의 간격 */
-}
+  .gallery-item {
+    text-align: center; /* 설명을 중앙에 배치 */
+  }
 
-.info-2, .info-7 {
-    margin: 0; /* 여백 초기화 */
-}
+  .gallery-item img {
+    width: 260px;
+    height: 375px;
+    display: block;
+    margin: 0 auto; /* 이미지 중앙 정렬 */
+  }
+
 
 
 .separator {
@@ -248,7 +273,10 @@ footer {
     border-top: 2px solid #0c0c0c;
 }
 
-
+a {
+    color: #000000; /* 검정색 */
+    text-decoration: none; /* 밑줄 제거 */
+  }
 
 
 
