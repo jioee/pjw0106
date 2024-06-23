@@ -1,0 +1,414 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+  }
+  body{
+    font-family: 'Pretendard';
+    background-color: #f8f7f4; /* 배경 색상 설정 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-bottom: 650px; /* 전체 페이지의 하단 여백을 100px로 설정 */
+  }
+
+
+
+
+  header {
+    background-color: #f8f7f4; /* 배경 색상 설정 */
+    color: #0c0c0c;
+    padding: 10px 0 0; /* 상단 padding을 0으로 조정 */
+    text-align: center;
+    
+}
+
+header h1 {
+    font-size: 15em; /* h1 크기 조절 */
+    font-weight: 900;
+    margin: 0; /* 여백 제거 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-button-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.image-button {
+    width: 1em;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.3s ease; /* 변환 효과를 부드럽게 만듦 */
+}
+
+.image-button-wrapper:hover .image-button {
+    content: url('호떡22.png'); /* 커서를 올렸을 때 다른 이미지로 변경 */
+}
+
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #0c0c0c; /* 네비게이션 링크 색상 수정 */
+    text-decoration: none;
+}
+
+
+
+
+main {
+        padding: 1px 80px; /* 위아래 10px, 좌우 80px로 설정 */
+        background-color: #f8f7f4; /* 배경 색상 설정 */
+        margin-top: 100px; /* 이 값을 조정해도 됩니다 */
+}
+
+section h2 {
+    font-size: 3em; /* h2 폰트 크기 조절 */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.half-line {
+    width: %; 
+    margin: 0; /* 왼쪽정렬 */
+    border: 1.5px solid #0c0c0c; /* 검은색 선 */
+}
+
+/* info-text 클래스 추가 */
+.info-text {
+    font-size: 3em; /* 원하는 폰트 크기로 조절 */
+}
+
+.info-1 {
+    font-size: 6em; /* 폰트 크기 조절 */
+    font-weight: bold; /* 글자 굵기 조절 */
+}
+
+
+.info-2 {
+    font-size: 3em; /* 폰트 크기 조절 */
+    font-weight: 500; /* 글자 굵기 조절 */
+}
+
+
+.info-3 {
+    font-size: 6em; /* 폰트 크기 조절 */
+    font-weight: 100; /* 글자 굵기 조절 */
+}
+
+
+.info-4 {
+    font-size: 3em; /* 폰트 크기 조절 */
+    font-weight: 100; /* 글자 굵기 조절 */
+}
+
+
+.info-5 {
+    font-size: 1.7em; /* 폰트 크기 조절 */
+    font-weight: 200; /* 글자 굵기 조절 */
+}
+
+.info-6 {
+    font-size: 3em; /* 폰트 크기 조절 */
+    font-weight: 200; /* 글자 굵기 조절 */
+}
+
+.info-7 {
+    font-size: 2em; /* 폰트 크기 조절 */
+    font-weight: 600; /* 글자 굵기 조절 */
+}
+
+.info-8 {
+    font-size: 4em; /* 폰트 크기 조절 */
+    font-weight: 600; /* 글자 굵기 조절 */
+}
+
+
+
+footer {
+    background-color: #f8f7f4; /* 배경 색상 설정 */
+    color: #0c0c0c;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+.image-buttons {
+    position: relative;
+    width: 100%;
+    height: 500px; /* 섹션의 높이를 설정 */
+}
+
+.image-button-link {
+    position: absolute;
+}
+
+#image-button-1 {
+    top: 150px; /* 원하는 위치 설정 */
+    left: 200px; /* 원하는 위치 설정 */
+}
+
+#image-button-2 {
+    top: 250px; /* 원하는 위치 설정 */
+    left: 900px; /* 원하는 위치 설정 */
+}
+
+#image-button-3 {
+    top: 500px; /* 원하는 위치 설정 */
+    left: 350px; /* 원하는 위치 설정 */
+}
+
+#image-button-4 {
+    top: 650px; /* 원하는 위치 설정 */
+    left: 850px; /* 원하는 위치 설정 */
+}
+.image-buttons .image-button {
+    width: 200px;
+    height: 200px;
+}
+.image-button {
+    transition: transform 0.3s ease;
+}
+
+.image-button:hover {
+    transform: scale(1.1); /* 이미지가 5% 커지도록 설정 */
+}
+
+
+.image-button-wrapper {
+    display: inline-block;
+    position: relative;
+    top: 20px; /* 아래로 20px 이동 */
+}
+
+.slider-container {
+    position: relative;
+    max-width: 1200px; /* 슬라이더의 최대 너비 설정 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* 슬라이더 너비 설정 */
+    height: 650px; /* 슬라이더 높이 설정 */
+}
+
+.slide {
+    position: relative;
+    width: 100%; /* 슬라이드 너비 설정 */
+    height: 100%; /* 슬라이드 높이 설정 */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지하며 채우기 */
+}
+
+.slide-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box; /* 박스 모델의 크기 계산 설정 */
+}
+
+.slide-caption {
+    margin-bottom: 10px; /* 설명과 버튼 사이 여백 설정 */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent; /* 배경색 없음 */
+    color: black; /* 버튼 글자색 검정색으로 변경 */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 40px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+
+
+
+.separator {
+    display: flex;
+    align-items: center;
+}
+
+.separator .text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px; /* 문구와 직선 사이의 간격 */
+}
+
+.separator .line {
+    flex: 1;
+    border-top: 2px solid #0c0c0c;
+}
+
+
+
+
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    footer {
+        position: static;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 3.5em; /* 작은 화면에서 h1 크기 조절 */
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+/* 화면 배율을 확대했을 때 글씨 크기 조절을 위한 미디어 쿼리 */
+@media (min-resolution: 1.8dppx) {
+    header h1 {
+        font-size: 9.5em; /* 배율이 2배 이상일 때 h1 크기 조절 */
+    }
+
+    nav ul li a {
+        font-size: 0.9em; /* 배율이 2배 이상일 때 네비게이션 링크 크기 조절 */
+    }
+
+    main p {
+        font-size: 1.2em; /* 배율이 2배 이상일 때 본문 글씨 크기 조절 */
+    }
+
+    footer p {
+        font-size: 0.8em; /* 배율이 2배 이상일 때 푸터 글씨 크기 조절 */
+    }
+}
+
+@media (min-resolution: 2.8dppx) {
+    header h1 {
+        font-size: 5.5em; /* 배율이 3배 이상일 때 h1 크기 조절 */
+    }
+
+    nav ul li a {
+        font-size: 0.8em; /* 배율이 3배 이상일 때 네비게이션 링크 크기 조절 */
+    }
+
+    main p {
+        font-size: 1.2em; /* 배율이 3배 이상일 때 본문 글씨 크기 조절 */
+    }
+
+    footer p {
+        font-size: 1.2em; /* 배율이 3배 이상일 때 푸터 글씨 크기 조절 */
+    }
+}
